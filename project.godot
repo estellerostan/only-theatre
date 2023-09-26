@@ -11,8 +11,21 @@ config_version=5
 [application]
 
 config/name="only-theatre"
+run/main_scene="res://examples/scenes/main.tscn"
 config/features=PackedStringArray("4.1", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+__InkRuntime="*res://addons/inkgd/runtime/static/ink_runtime.gd"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/inkgd/plugin.cfg")
+
+[inkgd]
+
+register_templates=true
 
 [rendering]
 
